@@ -9,6 +9,7 @@ import {PersonneService} from "./services/personne.service";
 export class AppComponent implements OnInit {
   title = 'angularfront20230223';
   personnes: any = [];
+  displayedColumns: string[] = ['name', 'email'];
 
   constructor(private service: PersonneService) {}
 
